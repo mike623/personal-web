@@ -24,13 +24,15 @@ html
     script(src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js')
     //- https://github.com/wvengen/d3-wordcloud
     script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js")
+    //- https://github.com/maxwellito/vivus
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js")
     //- script(src='lib/d3/d3.js')
     //- script(src='lib/d3/d3.layout.cloud.js')
     //- script(src='lib/d3/d3.wordcloud.js')
   body
     .border.d--f.jc--c
-      .onesec.d--f.jc--c(style="flex: 1")
-        h1(data-wrap='h1')
+      .onesec.d--f.ai--c.fd--c.jc--c(style="flex: 1")
+        h1(data-wrap='h1', style="font-weight: normal")
           | HI, I am Mike, a 
           div.typing-warp
             span.typing
@@ -65,4 +67,9 @@ html
       console.log('Service Worker registration failed: ', err)
       })
       }
+    //- script.
+    //-   var myVivus = new Vivus('my-svg', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false}, console.log)
+    //-   myVivus
+    //-     .reset()
+    //-     .play()
 
