@@ -6,6 +6,11 @@
   },
   "dependencies": {
     "autoprefixer": "^9.1.0",
-    "postcss-modules": "^1.3.2"
+    "postcss-modules": "^1.3.2",
+    "wordcloud": "^1.1.0"
+  },
+  "scripts": {
+    "start": "parcel index.pug",
+    "build": "NODE_ENV=production parcel build index.pug"
   }
 }

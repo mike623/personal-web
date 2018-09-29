@@ -2,11 +2,13 @@ body {
   padding: 0;
   margin: 0;
   color: #333;
+  margin-bottom: 100px;
+  cursor: url(images/cursor-close.png), auto;
 }
 
 .border {
-  animation: breathing 5s infinite normal;
-  min-height: 100vh;
+  /* animation: breathing 5s infinite normal;
+  min-height: 100vh; */
 }
 
 @keyframes breathing {
@@ -41,7 +43,7 @@ h1, h2, h3, h4 {
 
 
 .onesec > div{
-  flex: 1
+  width: 80%;
 }
 
 
@@ -71,7 +73,7 @@ h1, h2, h3, h4 {
 .sc-grid{
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: minmax(120px, 240px) minmax(120px, 240px);
+  grid-template-columns: minmax(120px, 240px) minmax(120px, 240px) minmax(120px, 240px);
   grid-gap: 32px;
 }
 
@@ -110,7 +112,7 @@ h1, h2, h3, h4 {
 
 .container {
   border-top: 1px solid #e0e0e0;
-  padding: 2px 16px;
+  padding: 16px 24px;
 }
 
 
