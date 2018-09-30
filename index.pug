@@ -22,11 +22,6 @@ html(lang='en')
     //- link(rel='stylesheet', type='text/css', media='screen', href='loader.css')
     link(rel='stylesheet', type='text/css', media='screen', href='flex.css')
     link(rel='stylesheet', type='text/css', media='screen', href='form.css')
-    link(href='https://fonts.googleapis.com/css?family=Montserrat|Raleway|Finger+Paint', rel='stylesheet')
-    link(href='https://unpkg.com/aos@next/dist/aos.css', rel='stylesheet')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js')
-    //- https://github.com/wvengen/d3-wordcloud
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js")
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js")
     meta(property='og:title', content='Mike - A smart person you enjoy work with')
     meta(property='og:type', content='profile')
@@ -67,10 +62,19 @@ html(lang='en')
           textarea#message(name="message", type='text', placeholder='MESSAGE')
           input#submit(type='submit', value='FIND MIKE FOR BETTER LIFE')
 
+
       div(style="height: 999px; width: 100vw")
         a-scene(embedded='', arjs='sourceType: webcam;')
           a-box(position='0 0.5 0', material='opacity: 0.5;')
           a-marker-camera(preset='hiro')
+
+          
+    link(href='https://fonts.googleapis.com/css?family=Montserrat|Raleway|Finger+Paint', rel='stylesheet')
+    link(href='https://unpkg.com/aos@next/dist/aos.css', rel='stylesheet')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js')
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js")
+
 
     script(src='main.js')
     //- aos
