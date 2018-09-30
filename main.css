@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
   cursor: pointer;
   padding-top: 150%; /* 1:1 Aspect Ratio */
   position: relative; /* If you want text inside of it */
-  animation: FadeIn 1s linear;
+  /* animation: FadeIn 1s linear; */
   animation-fill-mode: both;
 }
 .card > div {

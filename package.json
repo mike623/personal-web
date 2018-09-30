@@ -11,6 +11,9 @@
   },
   "scripts": {
     "start": "parcel index.pug",
-    "build": "NODE_ENV=production parcel build index.pug"
+    "prebuild": "rm -rf dist",
+    "build": "NODE_ENV=production parcel build index.pug",
+    "postbuild": "npx workbox-cli generateSW",
+    "publish": "netilfy deploy"
   }
 }
