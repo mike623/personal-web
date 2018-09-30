@@ -11,6 +11,13 @@ body {
   min-height: 100vh; */
 }
 
+
+@media (min-width: 768px){
+  .down-arrow{
+    display: none; 
+  }
+}
+
 @keyframes breathing {
   0% {
     border: 10px solid rgba(20%, 20%, 20%, 0.5);
