@@ -62,6 +62,12 @@ html(lang='en')
           textarea#message(name="message", type='text', placeholder='MESSAGE')
           input#submit(type='submit', value='FIND MIKE FOR BETTER LIFE')
 
+
+      div(style="height: 999px; width: 100vw")
+        a-scene(embedded='', arjs='sourceType: webcam;')
+          a-box(position='0 0.5 0', material='opacity: 0.5;')
+          a-marker-camera(preset='hiro')
+
           
     link(href='https://fonts.googleapis.com/css?family=Montserrat|Raleway|Finger+Paint', rel='stylesheet')
     link(href='https://unpkg.com/aos@next/dist/aos.css', rel='stylesheet')
@@ -69,25 +75,30 @@ html(lang='en')
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js")
 
+
     script(src='main.js')
     //- aos
     script(src="https://unpkg.com/aos@next/dist/aos.js")
-    script.
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then(function(registration) {
-            console.log(
-              "Service Worker registration successful with scope: ",
-              registration.scope
-            );
-          })
-          .catch(function(err) {
-            console.log("Service Worker registration failed: ", err);
-          });
-      }
+    //- script.
+    //-   if ("serviceWorker" in navigator) {
+    //-     navigator.serviceWorker
+    //-       .register("sw.js")
+    //-       .then(function(registration) {
+    //-         console.log(
+    //-           "Service Worker registration successful with scope: ",
+    //-           registration.scope
+    //-         );
+    //-       })
+    //-       .catch(function(err) {
+    //-         console.log("Service Worker registration failed: ", err);
+    //-       });
+    //-   }
     script.
       AOS.init();
+    //- // AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
+    script(src='https://aframe.io/releases/0.8.0/aframe.min.js')
+    script(src='https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js')
+
     //- script.
     //-   var myVivus = new Vivus('my-svg', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false}, console.log)
     //-   myVivus
