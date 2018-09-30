@@ -14,6 +14,6 @@
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production parcel build index.pug",
     "postbuild": "npx workbox-cli generateSW",
-    "publish": "netilfy deploy"
+    "publish": "netlify deploy"
   }
 }
