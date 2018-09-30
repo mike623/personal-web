@@ -79,20 +79,20 @@ html(lang='en')
     script(src='main.js')
     //- aos
     script(src="https://unpkg.com/aos@next/dist/aos.js")
-    script.
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then(function(registration) {
-            console.log(
-              "Service Worker registration successful with scope: ",
-              registration.scope
-            );
-          })
-          .catch(function(err) {
-            console.log("Service Worker registration failed: ", err);
-          });
-      }
+    //- script.
+    //-   if ("serviceWorker" in navigator) {
+    //-     navigator.serviceWorker
+    //-       .register("sw.js")
+    //-       .then(function(registration) {
+    //-         console.log(
+    //-           "Service Worker registration successful with scope: ",
+    //-           registration.scope
+    //-         );
+    //-       })
+    //-       .catch(function(err) {
+    //-         console.log("Service Worker registration failed: ", err);
+    //-       });
+    //-   }
     script.
       AOS.init();
     //- // AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
