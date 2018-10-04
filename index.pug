@@ -72,20 +72,20 @@ html(lang='en')
     script(src='main.js')
     //- aos
     script(src="https://unpkg.com/aos@next/dist/aos.js")
-    script.
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then(function(registration) {
-            console.log(
-              "Service Worker registration successful with scope: ",
-              registration.scope
-            );
-          })
-          .catch(function(err) {
-            console.log("Service Worker registration failed: ", err);
-          });
-      }
+    //- script.
+    //-   if ("serviceWorker" in navigator) {
+    //-     navigator.serviceWorker
+    //-       .register("sw.js")
+    //-       .then(function(registration) {
+    //-         console.log(
+    //-           "Service Worker registration successful with scope: ",
+    //-           registration.scope
+    //-         );
+    //-       })
+    //-       .catch(function(err) {
+    //-         console.log("Service Worker registration failed: ", err);
+    //-       });
+    //-   }
     script.
       AOS.init();
     //- script.
