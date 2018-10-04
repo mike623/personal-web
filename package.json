@@ -13,7 +13,7 @@
     "start": "parcel index.pug",
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production parcel build index.pug",
-    "postbuild": "npx workbox-cli generateSW",
+    "postbuild": "cp pp/*privacy_policy.html dist; npx workbox-cli generateSW",
     "publish": "netlify deploy"
   }
 }
