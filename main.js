@@ -1,7 +1,7 @@
 var options = {
   strings: [
-    "Font-end geek",
-    "Beck-end expert",
+    "Front-End geek",
+    "Back-End expert",
     "cook lover",
     "Sportsman",
     "Music lover"
