@@ -2,7 +2,7 @@ var options = {
   strings: [
     "Front-End geek",
     "Back-End expert",
-    "cook lover",
+    "fond of cooking",
     "Sportsman",
     "Music lover"
   ],
