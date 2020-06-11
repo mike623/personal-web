@@ -1,10 +1,10 @@
 var options = {
   strings: [
-    "Front-End geek",
-    "Back-End expert",
-    "fond of cooking",
-    "Sportsman",
-    "Music lover"
+    "Front-End geek 💻",
+    "Back-End expert 🔌",
+    "fond of cooking 🍳",
+    "Sportsman 🚴",
+    "Music lover 🎶"
   ],
   typeSpeed: 80,
   backDelay: 1000,
@@ -42,7 +42,9 @@ const list = () => [
 
 
 
-const x = () => WordCloud(document.getElementById('my_canvas'), { list: list(), fontFamily: 'Finger Paint', color: '#c4c4c4' } );
+// const x = () => WordCloud(document.getElementById('my_canvas'), { list: list(), fontFamily: 'Finger Paint', color: '#c4c4c4' } );
 
-setInterval(x, 1000 * 10)
-x()
+// setInterval(x, 1000 * 10)
+// x()
+
+require('./card');
