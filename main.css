@@ -6,37 +6,26 @@ body {
   cursor: url(images/cursor-close.png), auto;
 }
 
-.border {
-  /* animation: breathing 5s infinite normal;
-  min-height: 100vh; */
+html.hidden {
+  overflow: hidden;
+  padding-right: 15px;
 }
 
-
-@media (min-width: 768px){
-  .down-arrow{
-    display: none; 
+@media (min-width: 768px) {
+  .down-arrow {
+    display: none;
   }
 }
-
-@keyframes breathing {
-  0% {
-    border: 10px solid rgba(20%, 20%, 20%, 0.5);
-  }
-  50% {
-    border: 10px solid #333;
-  }
-  100% {
-    border: 10px solid rgba(20%, 20%, 20%, 0.5);
-  }
-}
-
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
-h1, h2, h3, h4 {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
   /* i just want font-size not font-weight */
   font-weight: normal;
 }
@@ -48,20 +37,17 @@ h1, h2, h3, h4 {
   margin: 30px;
 }
 
-
-.onesec > div{
+.onesec > div {
   width: 80%;
 }
 
-
-
 /* wrap */
-[data-wrap]{
+[data-wrap] {
   margin: 10px 0;
   position: relative;
 }
 [data-wrap]::before {
-  content: "<"attr(data-wrap)">";
+  content: "<" attr(data-wrap) ">";
   opacity: 0.5;
   font-size: 0.8rem;
   position: absolute;
@@ -77,94 +63,32 @@ h1, h2, h3, h4 {
   transform: translate(-100%, 100%);
 }
 
-.sc-grid{
+.sc-grid {
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: minmax(120px, 240px) minmax(120px, 240px) minmax(120px, 240px);
+  grid-template-columns: minmax(120px, 240px) minmax(120px, 240px) minmax(
+      120px,
+      240px
+    );
   grid-gap: 32px;
 }
 
+@import url("./styles/card.scss");
 
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards */
-.card {
-  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
-  border: 1px solid rgba(0,0,0,0.1);
-  transition: 0.3s;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  padding-top: 150%; /* 1:1 Aspect Ratio */
-  position: relative; /* If you want text inside of it */
-  /* animation: FadeIn 1s linear; */
-  animation-fill-mode: both;
-}
-.card > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.card .img {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 60%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  border-top: 1px solid #e0e0e0;
-  padding: 16px 24px;
-}
-
-
-@keyframes FadeIn { 
-  0% {
-    opacity: 0;
-  }
-  85% {
-    opacity: 1;
-  }
-  100% {
-  }
-}
-
-.card:nth-child(1) { animation-delay: .5s }
-.card:nth-child(2) { animation-delay: 1s }
-.card:nth-child(3) { animation-delay: 1.5s }
-.card:nth-child(4) { animation-delay: 2s }
-.card:nth-child(5) { animation-delay: 2.5s }
-.card:nth-child(6) { animation-delay: 3s }
-.card:nth-child(7) { animation-delay: 3.5s }
-.card:nth-child(8) { animation-delay: 4s }
-.card:nth-child(9) { animation-delay: 4.5s }
-
-
-
-@media (min-width: 1000px){
-  .typing-warp{
+@media (min-width: 1000px) {
+  .typing-warp {
     display: inline;
   }
 }
 
-@media (max-width: 1000px){
-  .onesec{
+@media (max-width: 1000px) {
+  .onesec {
     height: 30vh;
   }
   .border {
     flex-direction: column;
   }
-  .sc-grid{
-    display: block
-  }
-  .card {
-    width: 300px;
-    margin-bottom: 40px;
-    padding-top: 150%;
+  .sc-grid {
+    display: block;
   }
 }

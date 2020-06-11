@@ -6,12 +6,6 @@
 - sc.push({"name": "Lynk", "img": "https://lynk.global/assets/_images/logo-dark.svg", "desc": "CONNECTING THE WORLD'S GREATEST MINDS"}) 
 - sc.push({"name": "Fina", "img": "./images/fina.svg", "desc": "A SMART GIRL WHO HELP YOUR FINANCE"}) 
 
-//- - sc.push({"name": "hoopcam", "img": "", "desc": ""}) 
-//- - sc.push({"name": "hoopcam", "img": "", "desc": ""}) 
-//- - sc.push({"name": "hoopcam", "img": "", "desc": ""}) 
-//- - sc.push({"name": "hoopcam", "img": "", "desc": ""}) 
-//- - sc.push({"name": "hoopcam", "img": "", "desc": ""}) 
-
 doctype html
 html(lang='en')
   head
@@ -24,6 +18,7 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', media='screen', href='flex.css')
     link(rel='stylesheet', type='text/css', media='screen', href='form.css')
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     meta(property='og:title', content='Mike - A smart person you enjoy work with')
     meta(property='og:type', content='profile')
     meta(property='og:url', content='https://namike.me')
@@ -32,29 +27,27 @@ html(lang='en')
   body
     .border
       .onesec.d--f.ai--c.fd--c.jc--c(style="height: 80vh; position: relative")
-        img.down-arrow(data-aos="fade-down", data-aos-offset="-100" style="position:absolute; bottom: 0", src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=")
-        div
+        img.down-arrow(data-aos="fade-down", data-aos-offset="-100", data-aos-delay="300", style="position:absolute; bottom: 0", src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=")
+        div(data-aos="fade-down")
           h1(data-wrap='h1', style="font-weight: normal")
             | HI, I am Mike, a 
             div.typing-warp
               span.typing
-      //- skills
-      center(style="margin-bottom: 40px;", data-aos="fade-up")
-        h3(style="margin-top: 40px; margin-bottom: 32px") I KNOW
-        #my_canvas(style="width: 80vw; height: 50vh")
-      //- works
+      
       .d--f.jc--c.ai--c.fd--c(style="padding: 16px 32px;flex: 1;")
         .d--f
           h3(style="margin-top: 40px; margin-bottom: 32px") MY WORKS
         .sc-grid
           each val,index in sc
-            .card(id="card"+index, data-aos="fade-up", data-aos-delay=`${index * 200}`)
-              div.d--f.fd--c
-                .img.d--f.jc--c.ai--c(style="margin: 8px auto;")
-                  img(src=`${val.img}`, alt="", style="max-width: 80%; max-height: 80%; width: 100%")
-                .container(style="flex:")
-                  div(style="margin-bottom: 8px; font-weight: bold")= val.name
-                  div(style="opacity: 0.7")= val.desc
+            .card-holder
+              .card(id="card"+index)
+                button.close
+                div.d--f.fd--c.card-header
+                  .img.d--f.jc--c.ai--c(style="margin: 8px auto;")
+                    img(src=`${val.img}`, alt="", style="max-width: 80%; max-height: 80%; width: 100%")
+                  .container(style="flex:")
+                    div(style="margin-bottom: 8px; font-weight: bold")= val.name
+                    div(style="opacity: 0.7")= val.desc
       //- contact
       center(data-aos="fade-right")
         h3(style="margin-top: 40px; margin-bottom: 32px") LOOK FOR HELP?
@@ -74,25 +67,6 @@ html(lang='en')
     script(src='main.js')
     //- aos
     script(src="https://unpkg.com/aos@next/dist/aos.js")
-    //- script.
-    //-   if ("serviceWorker" in navigator) {
-    //-     navigator.serviceWorker
-    //-       .register("sw.js")
-    //-       .then(function(registration) {
-    //-         console.log(
-    //-           "Service Worker registration successful with scope: ",
-    //-           registration.scope
-    //-         );
-    //-       })
-    //-       .catch(function(err) {
-    //-         console.log("Service Worker registration failed: ", err);
-    //-       });
-    //-   }
     script.
       AOS.init();
-    //- script.
-    //-   var myVivus = new Vivus('my-svg', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false}, console.log)
-    //-   myVivus
-    //-     .reset()
-    //-     .play()
 
