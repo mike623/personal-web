@@ -10,15 +10,49 @@
   cursor: pointer;
   position: relative;
   transition: all 400ms ease;
-  overflow: hidden;
+  overflow: auto;
+  .card-header {
+    height: 100%;
+  }
+  .images-slide {
+    margin: 100px auto 0 auto;
+    width: 80%;
+  }
+  .my-slider {
+    opacity: 0;
+  }
+  .open-only {
+    display: none;
+  }
+  .get-btn-container {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    .hint {
+      margin-top: -1px;
+      margin-left: 10px;
+      font-size: 0.6rem;
+    }
+  }
+  .get-btn {
+    background-color: #0a84ff;
+    display: inline-block;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
   .chip-container {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     height: 100px;
     overflow: hidden;
-    .chip{
-      height: 30px;
+    font-size: 0.8rem;
+    .chip {
+      height: 25px;
       white-space: nowrap;
       margin-right: 5px;
       margin-bottom: 5px;
@@ -48,6 +82,10 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   &.is-open {
+    .open-only {
+      display: block;
+    }
+    cursor: auto;
     border-radius: 0px;
     left: 0px !important;
     top: 0px !important;
@@ -58,12 +96,14 @@
       visibility: visible;
     }
     .card-header {
+      height: auto;
+      display: flex;
       padding: 20px;
       flex-direction: row;
     }
     .img {
       width: 150px;
-      height: 150px;
+      height: 108px;
     }
     .container {
       border-top: 0;

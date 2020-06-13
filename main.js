@@ -17,7 +17,7 @@ var options = {
 var typed = new Typed(".typing", options);
 
 const WordCloud = require('wordcloud')
-
+require('./slick')
 const skills = require('./skills.json')
 
 function getRandomArbitrary(min, max) {
