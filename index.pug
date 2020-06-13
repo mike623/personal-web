@@ -1,10 +1,12 @@
 - var sc = []
-- sc.push({"name": "ECO-CYCLE", "img": "./images/eco-cycle.webp", "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER"}) 
-- sc.push({"name": "DeadStock", "img": "./images/ds.png", "desc": "AUTHENTIC SNEAKERS ONLINE TRADING PLATFORM"}) 
-- sc.push({"name": "HoopCam", "img": "https://www.hoop.cam/images/logo.svg", "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER"}) 
-- sc.push({"name": "Filmate", "img": "./images/Filmate_logo.png", "desc": "以戲會友，一拍即合"}) 
-- sc.push({"name": "Lynk", "img": "https://lynk.global/assets/_images/logo-dark.svg", "desc": "CONNECTING THE WORLD'S GREATEST MINDS"}) 
-- sc.push({"name": "Fina", "img": "./images/fina.svg", "desc": "A SMART GIRL WHO HELP YOUR FINANCE"}) 
+- sc.push({"name": "ECO-CYCLE", "img": "./images/eco-cycle.webp", "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER", tags: ['React Native', 'Nodejs', "Expo", "Android", "iOS", "DATA.GOV.HK"]}) 
+- sc.push({"name": "DeadStock", "img": "./images/ds.png", "desc": "AUTHENTIC SNEAKERS ONLINE TRADING PLATFORM", tags: ["Nodejs", "PostgreSQL", "Graphql", "AWS", "React", "React Native", "Android", "iOS", "HTML5", "CSS3", "k8s"]}) 
+- sc.push({"name": "HoopCam", "img": "https://www.hoop.cam/images/logo.svg", "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER", tags: ["React Native", "Android", "iOS", "AppCenter", "CircleCI"]}) 
+- sc.push({"name": "Filmate", "img": "./images/Filmate_logo.png", "desc": "以戲會友，一拍即合", tags: ["MeteorJS", "Cordova", "Android", "iOS"]}) 
+- sc.push({"name": "Lynk", "img": "https://lynk.global/assets/_images/logo-dark.svg", "desc": "CONNECTING THE WORLD'S GREATEST MINDS", tags: ["Golang", "AWS", "Jenkins", "Ansible", "NodeJs", "Python", "TensorFlow", "Nodejs", "Android", "iOS", "Docker", "Chrome extension", "Angular", "Vue"]}) 
+- sc.push({"name": "Fina", "img": "./images/fina.svg", "desc": "A SMART GIRL WHO HELP YOUR FINANCE", tags: ['React Native', 'Nodejs', "Expo", "Android", "iOS", "Hackathon"]}) 
+- sc.push({"name": "Hot Spot", "img": "./images/hot-spot.png", "desc": "Optimize with Sixth Sense", tags: ["Flir", "Hackathon", "Android", "Big-data"]}) 
+- sc.push({"name": "Booster", "img": "./images/booster.png", "desc": "Work Out with the Sixth Sense", tags: ["Flir", "Hackathon", "Android", "Sport"]}) 
 
 doctype html
 html(lang='en')
@@ -28,6 +30,7 @@ html(lang='en')
     .border
       .onesec.d--f.ai--c.fd--c.jc--c(style="height: 80vh; position: relative")
         img.down-arrow(data-aos="fade-down", data-aos-offset="-100", data-aos-delay="300", style="position:absolute; bottom: 0", src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=")
+        img(src="./images/me.png", alt="me", style="margin-bottom: 100px")
         div(data-aos="fade-down")
           h1(data-wrap='h1', style="font-weight: normal")
             | HI, I am Mike, a 
@@ -48,6 +51,9 @@ html(lang='en')
                   .container(style="flex:")
                     div(style="margin-bottom: 8px; font-weight: bold")= val.name
                     div(style="opacity: 0.7")= val.desc
+                    .chip-container
+                      each tag in val.tags
+                        .chip=tag
       //- contact
       center(data-aos="fade-right")
         h3(style="margin-top: 40px; margin-bottom: 32px") LOOK FOR HELP?
