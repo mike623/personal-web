@@ -29,16 +29,6 @@
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
-  @media (min-width: 1000px) {
-    &.is-open {
-      border-radius: 10px;
-      left: 100px !important;
-      top: 100px !important;
-      width: calc(100% - 200px) !important;
-      height: calc(100% - 200px) !important;
-    }
-  }
-
   &.is-open {
     border-radius: 0px;
     left: 0px !important;
@@ -60,6 +50,15 @@
     .container {
       border-top: 0;
       flex: 1;
+    }
+  }
+  @media (min-width: 1000px) {
+    &.is-open {
+      border-radius: 10px;
+      left: 100px !important;
+      top: 100px !important;
+      width: calc(100% - 200px) !important;
+      height: calc(100% - 200px) !important;
     }
   }
 }
