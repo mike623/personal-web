@@ -3,7 +3,12 @@
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "DATA.GOV.HK"]
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "DATA.GOV.HK"],
+    "images": [
+      "./images/sh/eco/1.webp",
+      "./images/sh/eco/2.webp",
+      "./images/sh/eco/3.webp"
+    ]
   },
   {
     "name": "DeadStock",
@@ -21,19 +26,30 @@
       "HTML5",
       "CSS3",
       "k8s"
-    ]
+    ],
+    "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"]
   },
   {
     "name": "HoopCam",
-    "img": "https://www.hoop.cam/images/logo.svg",
+    "img": "./images/hoopcam.png",
     "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER",
-    "tags": ["React Native", "Android", "iOS", "AppCenter", "CircleCI"]
+    "tags": ["React Native", "Android", "iOS", "AppCenter", "CircleCI"],
+    "images": [
+      "./images/sh/hc/1.webp",
+      "./images/sh/hc/2.webp",
+      "./images/sh/hc/3.webp"
+    ]
   },
   {
     "name": "Filmate",
     "img": "./images/Filmate_logo.png",
     "desc": "以戲會友，一拍即合",
-    "tags": ["MeteorJS", "Cordova", "Android", "iOS"]
+    "tags": ["MeteorJS", "Cordova", "Android", "iOS"],
+    "images": [
+      "./images/sh/fm/1.png",
+      "./images/sh/fm/2.png",
+      "./images/sh/fm/3.png"
+    ]
   },
   {
     "name": "Lynk",

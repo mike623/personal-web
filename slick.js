@@ -5,6 +5,7 @@ $(".card").click(function () {
   const w = window.innerWidth;
   setTimeout(() => {
     const node = $(".is-open .my-slider")[0];
+    if (!node) return;
     const con = $(".is-open #customize-controls")[0];
     console.log(con);
     slider = tns({
@@ -20,5 +21,5 @@ $(".card").click(function () {
 
 $(".close").click(function (e) {
   e.stopPropagation();
-  slider.destroy();
+  if (slider) slider.destroy();
 });

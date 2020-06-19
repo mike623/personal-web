@@ -53,19 +53,16 @@ html(lang='en')
                     .chip-container
                       each tag in val.tags
                         .chip=tag
-                    .images-slide
-                      ul#customize-controls.controls(aria-label='Carousel Navigation' tabindex='0')
-                        li.prev(aria-controls='customize' tabindex='-1' data-controls='prev')
-                          i.fa.fa-chevron-left
-                        li.next(aria-controls='customize' tabindex='-1' data-controls='next')
-                          i.fa.fa-chevron-right
-
-                      .my-slider
-                        img(src="./images/sh/ds/1.png", alt="")
-                        img(src="./images/sh/ds/2.png", alt="")
-                        img(src="./images/sh/ds/2.png", alt="")
-                        img(src="./images/sh/ds/2.png", alt="")
-                        img(src="./images/sh/ds/2.png", alt="")
+                    if val.images
+                      .images-slide
+                        ul#customize-controls.controls(aria-label='Carousel Navigation' tabindex='0')
+                          li.prev(aria-controls='customize' tabindex='-1' data-controls='prev')
+                            i.fa.fa-chevron-left
+                          li.next(aria-controls='customize' tabindex='-1' data-controls='next')
+                            i.fa.fa-chevron-right
+                        .my-slider
+                          each img in val.images
+                            img(src= img, alt="")
                     
                        
                     
