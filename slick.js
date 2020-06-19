@@ -1,5 +1,6 @@
 var slider;
 $(".card").click(function () {
+  slider = undefined;
   Card = $(this);
   if (Card.hasClass("is-open")) return;
   const w = window.innerWidth;
