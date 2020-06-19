@@ -1,0 +1,57 @@
+/* slick */
+.images-slide {
+  position: relative;
+}
+.tns-outer {
+  position: relative;
+}
+.tns-controls {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  //   pointer-events: none;
+  button[data-controls="next"] {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+  }
+  button[data-controls="prev"] {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+  }
+}
+button[data-action="stop"] {
+  display: none;
+}
+.tns-nav {
+  display: none;
+}
+
+#customize-controls {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  li {
+    padding: 0;
+    list-style: none;
+    font-size: 2rem;
+  }
+  li.prev {
+    margin-left: -50px;
+  }
+  li.next {
+    margin-right: -50px;
+  }
+}

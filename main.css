@@ -74,6 +74,7 @@ h4 {
 }
 
 @import url("./styles/card.scss");
+@import url("./styles/slick.scss");
 
 @media (min-width: 1000px) {
   .typing-warp {
@@ -92,3 +93,5 @@ h4 {
     display: block;
   }
 }
+
+

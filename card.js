@@ -1,3 +1,4 @@
+// https://codepen.io/hesrun/pen/OzJxdP
 var CardLeft, CardTop, CardWidth, CardHeight, Card, ScTop;
 
 $(".card").click(function() {
