@@ -8,7 +8,7 @@ body {
 
 html.hidden {
   overflow: hidden;
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 
 @media (min-width: 768px) {
