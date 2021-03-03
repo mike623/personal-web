@@ -4,7 +4,7 @@
     "parcel": "^1.12.4",
     "parcel-plugin-bundle-manifest": "^0.2.0",
     "parcel-plugin-sw-precache": "^1.0.1",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "sass": "^1.26.8"
   },
   "dependencies": {
