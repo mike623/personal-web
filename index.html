@@ -11,6 +11,8 @@
     <meta property="og:image" content="./images/me.jpg" />
     <script type="module" src="./main.js"></script>
     <link rel="stylesheet" href="./main.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -102,45 +104,122 @@
     </div>
   </div>
 
-  <div class="border">
+  <div class="flex justify-center flex-col items-center h-screen relative">
     <div
-      class="onesec flex justify-center flex-col items-center h-screen relative"
+      data-aos="fade-down"
+      data-aos-offset="-100"
+      data-aos-delay="300"
+      style="position: absolute; bottom: 0"
+      class="text-center w-full absolute"
     >
-      <center style="position: absolute; bottom: 50px; left: 0; right: 0">
-        <div style="margin-bottom: 10px" role="button">
-          <strong>MY WORKS</strong>
-        </div>
-        <div><i class="fa fa-chevron-down"></i></div>
-      </center>
-      <img
-        class="down-arrow"
-        data-aos="fade-down"
-        data-aos-offset="-100"
-        data-aos-delay="300"
-        style="position: absolute; bottom: 0"
-        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo="
-      /><img src="./images/me.png" alt="me" style="margin-bottom: 100px" />
-      <div data-aos="fade-down">
-        <h1 data-wrap="h1" class="text-4xl">
-          HI, I am Mike, a
-          <div class="typing-warp"><span class="typing"></span></div>
-        </h1>
+      <div style="margin-bottom: 10px" role="button">
+        <strong>MY WORKS</strong>
       </div>
+      <div><i class="fa fa-chevron-down"></i></div>
     </div>
-    <center data-aos="fade-right">
-      <h3 style="margin-top: 40px; margin-bottom: 32px">LOOK FOR HELP?</h3>
-      <form class="topBefore" id="form" netlify="netlify" name="contact">
-        <input id="name" name="name" type="text" placeholder="NAME" />
-        <input id="email" name="email" type="text" placeholder="E-MAIL" />
-        <textarea
-          id="message"
-          name="message"
-          type="text"
-          placeholder="MESSAGE"
-        ></textarea>
-        <input id="submit" type="submit" value="FIND MIKE FOR BETTER LIFE" />
-      </form>
-    </center>
+
+    <img src="./images/me.png" alt="me" style="margin-bottom: 100px" />
+    <div data-aos="fade-down">
+      <h1 data-wrap="h1" class="text-4xl">
+        HI, I am Mike, a
+        <div class="typing-warp"><span class="typing"></span></div>
+      </h1>
+    </div>
+  </div>
+
+  <!-- portfolio -->
+  <div class="my-10 text-center" x-data="{ open: 'ECO-CYCLE' }">
+    <div class="text-center italic text-2xl w-1/2 text-gray-600 m-auto">
+      “Software and cathedrals are much the same — first we build them, then we
+      pray.”
+    </div>
+    <div class="flex flex-wrap w-4/5 m-auto my-10">
+      <% showcase.forEach(function(c){ %>
+      <div
+        role="button"
+        x-bind:class="open === '<%= c.name %>' ? 'scale-125 ' : ''"
+        @click="open = '<%= c.name %>'"
+        class="w-1/4 md:w-1/6 mt-8 transform hover:scale-125 transition-all"
+      >
+        <div
+          class="
+            mx-auto
+            w-20
+            h-20
+            flex
+            justify-center
+            items-center
+            rounded-xl
+            border-2
+            p-5
+          "
+        >
+          <img src="<%= c.img %>" alt="" />
+        </div>
+        <div class="text-center mt-3"><%= c.name %></div>
+      </div>
+      <% }); %>
+    </div>
+
+    <div class="mx-10 md:w-3/4 mt-30 md:mx-auto rounded-lg border px-10 py-1" style="height: 500px;">
+      <% showcase.forEach(function(c){ %>
+      <div
+        class="wrapper my-10"
+        x-transition
+        x-show="open === '<%= c.name %>'"
+      >
+        <div class="flex items-center mb-5">
+          <div class="mr-5">
+            <div
+              class="
+                w-20
+                h-20
+                rounded-xl
+                overflow-hidden
+                bg-contain bg-no-repeat bg-center
+              "
+              style="background-image: url(<%= c.img %>)"
+            ></div>
+          </div>
+          <div class="text-left">
+            <div class="font-bold"><%= c.name %></div>
+            <div class="text-xs text-gray-400"><%= c.desc %></div>
+            <div class="mt-7">
+              <span
+                class="px-4 rounded-2xl py-1 bg-gray-300 text-white text-sm"
+              >
+                GET
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="mt-10"></div>
+        <div class="w-full flex overflow-x-scroll mt-10">
+          <% c.images.forEach(function(img){ %>
+          <img class="w-32 mr-5" src="<%= img %>" alt="" />
+          <% }); %>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+  <hr />
+
+  <!-- contact -->
+  <div class="text-center" data-aos="fade-right">
+    <h3 style="margin-top: 40px; margin-bottom: 32px">LOOK FOR HELP?</h3>
+    <form class="topBefore" id="form" netlify="netlify" name="contact">
+      <input id="name" name="name" type="text" placeholder="NAME" />
+      <input id="email" name="email" type="text" placeholder="E-MAIL" />
+      <textarea
+        id="message"
+        name="message"
+        type="text"
+        placeholder="MESSAGE"
+      ></textarea>
+      <input id="submit" type="submit" value="FIND MIKE FOR BETTER LIFE" />
+    </form>
   </div>
 </body>
 
