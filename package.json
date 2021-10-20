@@ -1,9 +1,6 @@
 {
   "devDependencies": {
     "cssnano": "^4.0.5",
-    "parcel": "^1.12.4",
-    "parcel-plugin-bundle-manifest": "^0.2.0",
-    "parcel-plugin-sw-precache": "^1.0.1",
     "postcss": "^8.3.10",
     "pug": "^2.0.3",
     "sass": "^1.26.8",
