@@ -53,7 +53,7 @@
   },
   {
     "name": "Lynk",
-    "img": "https://lynk.global/assets/_images/logo-dark.svg",
+    "img": "./images/lynk.svg",
     "desc": "CONNECTING THE WORLD'S GREATEST MINDS",
     "tags": [
       "Golang",
