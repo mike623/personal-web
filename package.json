@@ -14,7 +14,7 @@
     "wordcloud": "^1.1.0"
   },
   "scripts": {
-    "start": "parcel index.pug",
+    "start": "parcel index.html",
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production npx parcel build index.pug",
     "postbuild": "cp pp/*privacy_policy.html dist;",
