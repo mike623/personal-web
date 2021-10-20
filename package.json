@@ -5,7 +5,8 @@
     "parcel-plugin-bundle-manifest": "^0.2.0",
     "parcel-plugin-sw-precache": "^1.0.1",
     "pug": "^2.0.3",
-    "sass": "^1.26.8"
+    "sass": "^1.26.8",
+    "vite": "^2.6.10"
   },
   "dependencies": {
     "autoprefixer": "^9.1.0",
@@ -14,10 +15,11 @@
     "wordcloud": "^1.1.0"
   },
   "scripts": {
-    "start": "parcel index.html",
+    "start": "vite",
     "prebuild": "rm -rf dist",
-    "build": "NODE_ENV=production npx parcel build index.pug",
     "postbuild": "cp pp/*privacy_policy.html dist;",
-    "publish": "netlify deploy"
+    "publish": "netlify deploy",
+    "build": "vite build",
+    "serve": "vite preview"
   }
 }

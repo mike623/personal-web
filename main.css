@@ -72,7 +72,7 @@ h4 {
   grid-gap: 32px;
 }
 
-@import url("./styles/card.scss");
+/* @import url("./styles/card.scss"); */
 
 @media (min-width: 1000px) {
   .typing-warp {
