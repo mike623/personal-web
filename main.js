@@ -1,3 +1,4 @@
+import showcase from "./showcase.json";
 var typed = new Typed(".typing", {
   strings: [
     "Front-End geek 💻",

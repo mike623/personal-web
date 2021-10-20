@@ -70,24 +70,28 @@
       "Chrome extension",
       "Angular",
       "Vue"
-    ]
+    ],
+    "images": []
   },
   {
     "name": "Fina",
     "img": "./images/fina.svg",
     "desc": "A SMART GIRL WHO HELP YOUR FINANCE",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "Hackathon"]
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "Hackathon"],
+    "images": []
   },
   {
     "name": "Hot Spot",
     "img": "./images/hot-spot.png",
     "desc": "Optimize with Sixth Sense",
-    "tags": ["Flir", "Hackathon", "Android", "Big-data"]
+    "tags": ["Flir", "Hackathon", "Android", "Big-data"],
+    "images": []
   },
   {
     "name": "Booster",
     "img": "./images/booster.png",
     "desc": "Work Out with the Sixth Sense",
-    "tags": ["Flir", "Hackathon", "Android", "Sport"]
+    "tags": ["Flir", "Hackathon", "Android", "Sport"],
+    "images": []
   }
 ]
