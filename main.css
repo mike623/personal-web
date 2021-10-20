@@ -1,28 +1,15 @@
-@import url('./flex.css');
-@import url('./form.css');
+@import url("./flex.css");
+@import url("./form.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 body {
   padding: 0;
   margin: 0;
   color: #333;
   margin-bottom: 100px;
-}
-
-html.hidden {
-  overflow: hidden;
-  /* padding-right: 15px; */
-}
-
-@media (min-width: 768px) {
-  .down-arrow {
-    display: none;
-  }
 }
 
 * {
@@ -38,16 +25,6 @@ h4 {
   font-weight: normal;
 }
 
-.onesec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-}
-
-.onesec > div {
-  width: 80%;
-}
 
 /* wrap */
 [data-wrap] {
