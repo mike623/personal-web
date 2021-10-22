@@ -1,5 +1,6 @@
 [
   {
+    
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
@@ -8,9 +9,12 @@
       "./images/sh/eco/1.webp",
       "./images/sh/eco/2.webp",
       "./images/sh/eco/3.webp"
-    ]
+    ],
+    "url": "https://play.google.com/store/apps/details?id=me.mike.recycle",
+    "detail": "Clean, Simple Hong Kong Recycle Map Helper<br/> It keep track open sourced Hong Kong government recycle point data and let you find and save them a few tap"
   },
   {
+    "url": "https://www.facebook.com/deadstock.asia/about/?ref=page_internal",
     "name": "DeadStock",
     "img": "./images/ds.png",
     "desc": "AUTHENTIC SNEAKERS ONLINE TRADING PLATFORM",
@@ -27,9 +31,11 @@
       "CSS3",
       "k8s"
     ],
-    "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"]
+    "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"],
+    "detail": "An information centre and exchange placed for Hong Kong sneaker"
   },
   {
+    "url": "https://www.hoop.cam/",
     "name": "HoopCam",
     "img": "./images/hoopcam.png",
     "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER",
@@ -38,9 +44,11 @@
       "./images/sh/hc/1.webp",
       "./images/sh/hc/2.webp",
       "./images/sh/hc/3.webp"
-    ]
+    ],
+    "detail": "HoopCam makes basketball an eSport so passionate players like you can earn as you play and contribute to the growth of basketball worldwide"
   },
   {
+    "url": "https://www.facebook.com/getfilmate/",
     "name": "Filmate",
     "img": "./images/Filmate_logo.png",
     "desc": "以戲會友，一拍即合",
@@ -49,9 +57,11 @@
       "./images/sh/fm/1.png",
       "./images/sh/fm/2.png",
       "./images/sh/fm/3.png"
-    ]
+    ],
+    "detail": "An elegant application to help you find your file-mate"
   },
   {
+    "url": "https://lynk.global/",
     "name": "Lynk",
     "img": "./images/lynk.svg",
     "desc": "CONNECTING THE WORLD'S GREATEST MINDS",
@@ -71,9 +81,11 @@
       "Angular",
       "Vue"
     ],
-    "images": []
+    "images": [],
+    "detail": " • Development of web management platform for enterprise clients.<br/> • Internal system development to enhance team performance.<br/> • Web communication platform development<br/> • Run agile development team.<br/> • Gather requirement with the project owner<br/> • Invoke with system solution design<br/> • Mobile development with React Native, Native language<br/> "
   },
   {
+    "url": false,
     "name": "Fina",
     "img": "./images/fina.svg",
     "desc": "A SMART GIRL WHO HELP YOUR FINANCE",
@@ -81,17 +93,21 @@
     "images": []
   },
   {
+    "url": "https://devpost.com/404_Not_Found/challenges",
     "name": "Hot Spot",
     "img": "./images/hot-spot.png",
     "desc": "Optimize with Sixth Sense",
     "tags": ["Flir", "Hackathon", "Android", "Big-data"],
-    "images": []
+    "images": [],
+    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?"
   },
   {
+    "url": "https://devpost.com/404_Not_Found/challenges",
     "name": "Booster",
     "img": "./images/booster.png",
     "desc": "Work Out with the Sixth Sense",
     "tags": ["Flir", "Hackathon", "Android", "Sport"],
-    "images": []
+    "images": [],
+    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?"
   }
 ]
