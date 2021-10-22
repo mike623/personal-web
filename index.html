@@ -26,6 +26,13 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+  <script>
+    window.kebabCase = (string) =>
+      string
+        .replace(/([a-z])([A-Z])/g, "$1-$2")
+        .replace(/\s+/g, "-")
+        .toLowerCase();
+  </script>
 </html>
 
 <body>
@@ -53,7 +60,7 @@
       style="position: absolute; bottom: 0"
       class="text-center w-full absolute"
     >
-      <a style="margin-bottom: 10px" href="#portfolio" >
+      <a style="margin-bottom: 10px" href="#portfolio">
         <strong>MY WORKS</strong>
       </a>
       <div><i class="fa fa-chevron-down"></i></div>

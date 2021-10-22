@@ -17,7 +17,7 @@
   "scripts": {
     "start": "vite",
     "prebuild": "rm -rf dist",
-    "postbuild": "cp pp/*privacy_policy.html dist;",
+    "postbuild": "cp pp/*privacy_policy.html dist; cp -R images ./dist/images; cp -R images ./dist/assets/images",
     "publish": "netlify deploy",
     "build": "vite build",
     "serve": "vite preview"
