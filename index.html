@@ -69,7 +69,7 @@
   </div>
 
   <!-- portfolio -->
-  <div class="my-10 text-center" x-data="{ open: 'ECO-CYCLE' }">
+  <div class="my-10 text-center" x-data="{ open: 'Lynk' }">
     <div
       class="text-center italic text-2xl md:w-1/2 text-gray-600 mx-10 md:m-auto"
     >
@@ -194,6 +194,18 @@
 
         <div id="detail" class="mt-10 text-sm text-left text-gray-500">
           <%- c.detail %>
+        </div>
+
+        <!-- tech stack -->
+        <div class="mt-10 flex">
+          <% c.tags.forEach(function(tag){ %>
+          <div
+            
+            :style="`--background: url(./images/stack-icons/${kebabCase('<%= tag %>')}.svg.png)`"
+            alt="<%= tag %>"
+            class="data-image mr-3 tooltip top"
+          ></div>
+          <% }); %>
         </div>
       </div>
       <% }); %>

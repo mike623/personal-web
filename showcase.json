@@ -4,7 +4,7 @@
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "DATA.GOV.HK"],
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "ios", "DATA.GOV.HK", "Firebase"],
     "images": [
       "./images/sh/eco/1.webp",
       "./images/sh/eco/2.webp",
@@ -33,10 +33,10 @@
       "React",
       "React Native",
       "Android",
-      "iOS",
+      "ios",
       "HTML5",
       "CSS3",
-      "k8s"
+      "Kubernetes"
     ],
     "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"],
     "detail": "An information centre and exchange placed for Hong Kong sneaker",
@@ -53,7 +53,7 @@
     "name": "HoopCam",
     "img": "./images/hoopcam.png",
     "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER",
-    "tags": ["React Native", "Android", "iOS", "AppCenter", "CircleCI"],
+    "tags": ["React Native", "Android", "ios", "AppCenter", "CircleCI", "Firebase"],
     "images": [
       "./images/sh/hc/1.webp",
       "./images/sh/hc/2.webp",
@@ -73,7 +73,7 @@
     "name": "Filmate",
     "img": "./images/Filmate_logo.png",
     "desc": "以戲會友，一拍即合",
-    "tags": ["MeteorJS", "Cordova", "Android", "iOS"],
+    "tags": ["MeteorJS", "Cordova", "Android", "ios"],
     "images": [
       "./images/sh/fm/1.png",
       "./images/sh/fm/2.png",
@@ -94,16 +94,15 @@
     "img": "./images/lynk.svg",
     "desc": "CONNECTING THE WORLD'S GREATEST MINDS",
     "tags": [
-      "Golang",
+      "go",
       "AWS",
       "Jenkins",
       "Ansible",
-      "NodeJs",
       "Python",
-      "TensorFlow",
+      "Tensorflow",
       "Nodejs",
       "Android",
-      "iOS",
+      "ios",
       "Docker",
       "Chrome extension",
       "Angular",
@@ -124,7 +123,7 @@
     "name": "Fina",
     "img": "./images/fina.svg",
     "desc": "A SMART GIRL WHO HELP YOUR FINANCE",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "Hackathon"],
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "ios", "Hackathon"],
     "images": [],
     "meta": {
       "language": "EN",
@@ -139,7 +138,7 @@
     "name": "Hot Spot",
     "img": "./images/hot-spot.png",
     "desc": "Optimize with Sixth Sense",
-    "tags": ["Flir", "Hackathon", "Android", "Big-data"],
+    "tags": ["React Native"],
     "images": [],
     "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?",
     "meta": {
@@ -155,7 +154,7 @@
     "name": "Booster",
     "img": "./images/booster.png",
     "desc": "Work Out with the Sixth Sense",
-    "tags": ["Flir", "Hackathon", "Android", "Sport"],
+    "tags": ["React Native"],
     "images": [],
     "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?",
     "meta": {

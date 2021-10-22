@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 @import url("./flex.css");
 @import url("./form.css");
+@import url("./styles/tooltips.css");
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +26,6 @@ h4 {
   /* i just want font-size not font-weight */
   font-weight: normal;
 }
-
 
 /* wrap */
 [data-wrap] {
@@ -96,3 +96,14 @@ h4 {
 [role="button"] {
   cursor: pointer;
 }
+
+div.data-image {
+  background-image: var(--background);
+  min-width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
