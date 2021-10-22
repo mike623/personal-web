@@ -3,14 +3,7 @@
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
-    "tags": [
-      "React Native",
-      "Nodejs",
-      "Expo",
-      "Android",
-      "ios",
-      "Firebase"
-    ],
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "ios", "Firebase"],
     "images": [
       "./images/sh/eco/1.webp",
       "./images/sh/eco/2.webp",
@@ -93,7 +86,16 @@
     "name": "Filmate",
     "img": "./images/Filmate_logo.png",
     "desc": "以戲會友，一拍即合",
-    "tags": ["MeteorJS", "Cordova", "Android", "ios"],
+    "tags": [
+      "MeteorJS",
+      "Cordova",
+      "Android",
+      "ios",
+      "Mongodb",
+      "AWS",
+      "HTML5",
+      "CSS3"
+    ],
     "images": [
       "./images/sh/fm/1.png",
       "./images/sh/fm/2.png",
@@ -110,7 +112,7 @@
   },
   {
     "url": "https://lynk.global/",
-    "name": "Lynk (as Engineer)",
+    "name": "Lynk",
     "img": "./images/lynk.svg",
     "desc": "CONNECTING THE WORLD'S GREATEST MINDS",
     "tags": [

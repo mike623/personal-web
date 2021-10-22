@@ -53,9 +53,9 @@
       style="position: absolute; bottom: 0"
       class="text-center w-full absolute"
     >
-      <div style="margin-bottom: 10px" role="button">
+      <a style="margin-bottom: 10px" href="#portfolio" >
         <strong>MY WORKS</strong>
-      </div>
+      </a>
       <div><i class="fa fa-chevron-down"></i></div>
     </div>
 
@@ -69,7 +69,7 @@
   </div>
 
   <!-- portfolio -->
-  <div class="my-10 text-center" x-data="{ open: 'Lynk' }">
+  <div id="portfolio" class="my-10 text-center" x-data="{ open: 'Lynk' }">
     <div
       class="text-center italic text-2xl md:w-1/2 text-gray-600 mx-10 md:m-auto"
     >
@@ -119,7 +119,7 @@
     >
       <% showcase.forEach(function(c){ %>
       <div class="wrapper my-10" x-transition x-show="open === '<%= c.name %>'">
-        <div class="flex mb-5 flex-col md:items-center md:flex-row">
+        <div class="flex mb-10 flex-col md:items-center md:flex-row">
           <div class="mr-10 mb-5 md:mb-0">
             <div
               class="
