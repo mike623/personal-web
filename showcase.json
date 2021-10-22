@@ -11,7 +11,14 @@
       "./images/sh/eco/3.webp"
     ],
     "url": "https://play.google.com/store/apps/details?id=me.mike.recycle",
-    "detail": "Clean, Simple Hong Kong Recycle Map Helper<br/> It keep track open sourced Hong Kong government recycle point data and let you find and save them a few tap"
+    "detail": "Clean, Simple Hong Kong Recycle Map Helper<br/> It keep track open sourced Hong Kong government recycle point data and let you find and save them a few tap",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Utils",
+      "startAt": "Sep 2014",
+      "funniness": 3
+    }
   },
   {
     "url": "https://www.facebook.com/deadstock.asia/about/?ref=page_internal",
@@ -32,7 +39,14 @@
       "k8s"
     ],
     "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"],
-    "detail": "An information centre and exchange placed for Hong Kong sneaker"
+    "detail": "An information centre and exchange placed for Hong Kong sneaker",
+    "meta": {
+      "language": "EN",
+      "platform": "Web, Mobile",
+      "catagories": "Fashion",
+      "startAt": "Sep 2019",
+      "funniness": 3
+    }
   },
   {
     "url": "https://www.hoop.cam/",
@@ -45,7 +59,14 @@
       "./images/sh/hc/2.webp",
       "./images/sh/hc/3.webp"
     ],
-    "detail": "HoopCam makes basketball an eSport so passionate players like you can earn as you play and contribute to the growth of basketball worldwide"
+    "detail": "HoopCam makes basketball an eSport so passionate players like you can earn as you play and contribute to the growth of basketball worldwide",
+    "meta": {
+      "language": "EN",
+      "platform": "Web, Mobile",
+      "catagories": "Sport",
+      "startAt": "Sep 2019",
+      "funniness": 4
+    }
   },
   {
     "url": "https://www.facebook.com/getfilmate/",
@@ -58,7 +79,14 @@
       "./images/sh/fm/2.png",
       "./images/sh/fm/3.png"
     ],
-    "detail": "An elegant application to help you find your file-mate"
+    "detail": "An elegant application to help you find your file-mate",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Social",
+      "startAt": "Sep 2019",
+      "funniness": 5
+    }
   },
   {
     "url": "https://lynk.global/",
@@ -82,7 +110,14 @@
       "Vue"
     ],
     "images": [],
-    "detail": " • Development of web management platform for enterprise clients.<br/> • Internal system development to enhance team performance.<br/> • Web communication platform development<br/> • Run agile development team.<br/> • Gather requirement with the project owner<br/> • Invoke with system solution design<br/> • Mobile development with React Native, Native language<br/> "
+    "detail": " • Development of web management platform for enterprise clients.<br/> • Internal system development to enhance team performance.<br/> • Web communication platform development<br/> • Run agile development team.<br/> • Gather requirement with the project owner<br/> • Invoke with system solution design<br/> • Mobile development with React Native, Native language<br/> ",
+    "meta": {
+      "language": "EN",
+      "platform": "Web, Mobile",
+      "catagories": "Business",
+      "startAt": "Jun 2014",
+      "funniness": 3
+    }
   },
   {
     "url": false,
@@ -90,7 +125,14 @@
     "img": "./images/fina.svg",
     "desc": "A SMART GIRL WHO HELP YOUR FINANCE",
     "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "Hackathon"],
-    "images": []
+    "images": [],
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Finance",
+      "startAt": "May 2020",
+      "funniness": 5
+    }
   },
   {
     "url": "https://devpost.com/404_Not_Found/challenges",
@@ -99,7 +141,14 @@
     "desc": "Optimize with Sixth Sense",
     "tags": ["Flir", "Hackathon", "Android", "Big-data"],
     "images": [],
-    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?"
+    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Utils",
+      "startAt": "May 2016",
+      "funniness": 5
+    }
   },
   {
     "url": "https://devpost.com/404_Not_Found/challenges",
@@ -108,6 +157,13 @@
     "desc": "Work Out with the Sixth Sense",
     "tags": ["Flir", "Hackathon", "Android", "Sport"],
     "images": [],
-    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?"
+    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Utils",
+      "startAt": "May 2016",
+      "funniness": 5
+    }
   }
 ]

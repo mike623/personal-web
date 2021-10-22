@@ -18,10 +18,6 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Finger+Paint"
-      rel="stylesheet"
-    />
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
 
@@ -139,7 +135,7 @@
           <div class="text-left">
             <div class="font-bold"><%= c.name %></div>
             <div class="text-xs text-gray-400"><%= c.desc %></div>
-            <div class="mt-7">
+            <div class="mt-4">
               <a
                 role="button"
                 target="_blank"
@@ -156,7 +152,40 @@
           </div>
         </div>
         <hr />
-        <div class="mt-10"></div>
+
+        <!-- meta -->
+        <div class="mt-5 flex justify-between text-gray-700 items-center">
+          <div class="flex-1">
+            <div class="text-xs opacity-70">Platform</div>
+            <div class="font-bold"><%= c.meta.platform %></div>
+            <div class="text-xs">platform</div>
+          </div>
+          <div class="h-7 bg-gray-300" style="width: 1px"></div>
+          <div class="flex-1">
+            <div class="text-xs opacity-70">LANGUAGE</div>
+            <div class="font-bold"><%= c.meta.language %></div>
+            <div class="text-xs">language</div>
+          </div>
+          <div class="h-7 bg-gray-300" style="width: 1px"></div>
+          <div class="flex-1">
+            <div class="text-xs opacity-70">Catagories</div>
+            <div class="font-bold"><%= c.meta.catagories %></div>
+            <div class="text-xs">catagories</div>
+          </div>
+          <div class="h-7 bg-gray-300" style="width: 1px"></div>
+          <div class="flex-1">
+            <div class="text-xs opacity-70">Start At</div>
+            <div class="font-bold"><%= c.meta.startAt %></div>
+            <div class="text-xs">Start At</div>
+          </div>
+          <div class="h-7 bg-gray-300" style="width: 1px"></div>
+          <div class="flex-1">
+            <div class="text-xs opacity-70">Funniness</div>
+            <div class="font-bold"><%= c.meta.funniness %></div>
+            <div class="text-xs">over 5</div>
+          </div>
+        </div>
+
         <div class="w-full flex overflow-x-scroll mt-10">
           <% c.images.forEach(function(img){ %>
           <img class="w-32 mr-5" src="<%= img %>" alt="" />
