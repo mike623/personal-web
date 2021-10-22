@@ -83,7 +83,7 @@
       “Software and cathedrals are much the same — first we build them, then we
       pray.”
     </div>
-    <div class="flex md:flex-wrap w-4/5 m-auto my-10 overflow-auto">
+    <div class="flex md:flex-wrap w-4/5 m-auto my-10 overflow-x-auto">
       <% showcase.forEach(function(c){ %>
       <div
         role="button"
@@ -167,8 +167,9 @@
             <div class="font-bold"><%= c.meta.platform %></div>
             <div class="text-xs">platform</div>
           </div>
-          <div class="h-7 bg-gray-300" style="width: 1px"></div>
-          <div class="flex-1">
+
+          <div class="hidden md:block h-7 bg-gray-300" style="width: 1px"></div>
+          <div class="flex-1 hidden md:block">
             <div class="text-xs opacity-70">LANGUAGE</div>
             <div class="font-bold"><%= c.meta.language %></div>
             <div class="text-xs">language</div>
@@ -179,8 +180,8 @@
             <div class="font-bold"><%= c.meta.catagories %></div>
             <div class="text-xs">catagories</div>
           </div>
-          <div class="h-7 bg-gray-300" style="width: 1px"></div>
-          <div class="flex-1">
+          <div class="hidden md:block h-7 bg-gray-300" style="width: 1px"></div>
+          <div class="flex-1 hidden md:block">
             <div class="text-xs opacity-70">Start At</div>
             <div class="font-bold"><%= c.meta.startAt %></div>
             <div class="text-xs">Start At</div>
