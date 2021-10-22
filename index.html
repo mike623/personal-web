@@ -197,15 +197,17 @@
         </div>
 
         <!-- tech stack -->
-        <div class="mt-10 flex">
-          <% c.tags.forEach(function(tag){ %>
-          <div
-            
-            :style="`--background: url(./images/stack-icons/${kebabCase('<%= tag %>')}.svg.png)`"
-            alt="<%= tag %>"
-            class="data-image mr-3 tooltip top"
-          ></div>
-          <% }); %>
+        <div class="text-left mt-10">
+          <div class="mb-3 text-xs text-gray-400">used with:</div>
+          <div class="flex flex-wrap">
+            <% c.tags.forEach(function(tag){ %>
+            <div
+              :style="`--background: url(./images/stack-icons/${kebabCase('<%= tag %>')}.svg.png)`"
+              alt="<%= tag %>"
+              class="data-image mr-3 tooltip top mb-2"
+            ></div>
+            <% }); %>
+          </div>
         </div>
       </div>
       <% }); %>

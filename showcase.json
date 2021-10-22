@@ -1,10 +1,16 @@
 [
   {
-    
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "ios", "DATA.GOV.HK", "Firebase"],
+    "tags": [
+      "React Native",
+      "Nodejs",
+      "Expo",
+      "Android",
+      "ios",
+      "Firebase"
+    ],
     "images": [
       "./images/sh/eco/1.webp",
       "./images/sh/eco/2.webp",
@@ -36,7 +42,13 @@
       "ios",
       "HTML5",
       "CSS3",
-      "Kubernetes"
+      "Kubernetes",
+      "Jest",
+      "sass",
+      "typescript",
+      "webpack",
+      "bootstrap",
+      "redux"
     ],
     "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"],
     "detail": "An information centre and exchange placed for Hong Kong sneaker",
@@ -53,7 +65,15 @@
     "name": "HoopCam",
     "img": "./images/hoopcam.png",
     "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER",
-    "tags": ["React Native", "Android", "ios", "AppCenter", "CircleCI", "Firebase"],
+    "tags": [
+      "React Native",
+      "Android",
+      "ios",
+      "AppCenter",
+      "CircleCI",
+      "Firebase",
+      "pug"
+    ],
     "images": [
       "./images/sh/hc/1.webp",
       "./images/sh/hc/2.webp",
@@ -90,7 +110,7 @@
   },
   {
     "url": "https://lynk.global/",
-    "name": "Lynk",
+    "name": "Lynk (as Engineer)",
     "img": "./images/lynk.svg",
     "desc": "CONNECTING THE WORLD'S GREATEST MINDS",
     "tags": [
@@ -106,7 +126,20 @@
       "Docker",
       "Chrome extension",
       "Angular",
-      "Vue"
+      "vue-js",
+      "Karma",
+      "Jest",
+      "Mocha",
+      "Mongodb",
+      "nginx",
+      "pug",
+      "sass",
+      "webpack",
+      "selenium",
+      "puppeteer",
+      "sketch",
+      "babeljs",
+      "redux"
     ],
     "images": [],
     "detail": " • Development of web management platform for enterprise clients.<br/> • Internal system development to enhance team performance.<br/> • Web communication platform development<br/> • Run agile development team.<br/> • Gather requirement with the project owner<br/> • Invoke with system solution design<br/> • Mobile development with React Native, Native language<br/> ",
