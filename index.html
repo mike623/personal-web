@@ -120,7 +120,17 @@
     </div>
 
     <div
-      class="mx-10 md:w-3/4 mt-30 md:mx-auto rounded-lg border px-10 py-1 dark:bg-gray-700"
+      class="
+        mx-10
+        md:w-3/4
+        mt-30
+        md:mx-auto
+        rounded-lg
+        border
+        px-10
+        py-1
+        dark:bg-gray-700
+      "
       style="min-height: 500px"
     >
       <% showcase.forEach(function(c){ %>
@@ -160,7 +170,16 @@
         <hr />
 
         <!-- meta -->
-        <div class="mt-5 flex justify-between text-gray-700 items-center dark:text-gray-300">
+        <div
+          class="
+            mt-5
+            flex
+            justify-between
+            text-gray-700
+            items-center
+            dark:text-gray-300
+          "
+        >
           <div class="flex-1">
             <div class="text-xs opacity-70">Platform</div>
             <div class="font-bold"><%= c.meta.platform %></div>
@@ -225,8 +244,19 @@
   <!-- contact -->
   <div class="text-center" data-aos="fade-right">
     <h3 style="margin-top: 40px; margin-bottom: 32px">LOOK FOR HELP?</h3>
-    <form class="topBefore" id="form" netlify="netlify" name="contact">
-      <input id="name" name="name" type="text" placeholder="NAME" />
+    <form
+      class="topBefore rounded px-8 pt-6 pb-8 mb-4"
+      id="form"
+      netlify="netlify"
+      name="contact"
+    >
+      <input
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="name"
+        name="name"
+        type="text"
+        placeholder="NAME"
+      />
       <input id="email" name="email" type="text" placeholder="E-MAIL" />
       <textarea
         id="message"
