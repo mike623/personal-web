@@ -35,7 +35,7 @@
   </script>
 </html>
 
-<body>
+<body class="dark:bg-gray-800 dark:text-gray-400">
   <div class="swiper-container h-screen">
     <div class="swiper">
       <div class="swiper-wrapper">
@@ -45,9 +45,7 @@
             height: 100vh;
             background-image: url(https://lh3.googleusercontent.com/WLn4oFIZJPNgL88NugUqQw0N7j_ro5VRu95qRQ4qdmqaQ8e-TSAPmcFXMnqR8goFCITPnRmeAwe_yhHB7ljS7J7Wrnc75i0qcogVeaN9hHvFFlkG_ekGN8aUMyyBpuOqLvZrgeTE2EM=w1920-h1080);
           "
-        >
-          > hi
-        </div>
+        ></div>
       </div>
     </div>
   </div>
@@ -111,6 +109,7 @@
             rounded-xl
             border
             p-5
+            dark:bg-gray-600
           "
         >
           <img src="<%= c.img %>" alt="" />
@@ -121,7 +120,7 @@
     </div>
 
     <div
-      class="mx-10 md:w-3/4 mt-30 md:mx-auto rounded-lg border px-10 py-1"
+      class="mx-10 md:w-3/4 mt-30 md:mx-auto rounded-lg border px-10 py-1 dark:bg-gray-700"
       style="min-height: 500px"
     >
       <% showcase.forEach(function(c){ %>
@@ -161,7 +160,7 @@
         <hr />
 
         <!-- meta -->
-        <div class="mt-5 flex justify-between text-gray-700 items-center">
+        <div class="mt-5 flex justify-between text-gray-700 items-center dark:text-gray-300">
           <div class="flex-1">
             <div class="text-xs opacity-70">Platform</div>
             <div class="font-bold"><%= c.meta.platform %></div>
