@@ -3,14 +3,24 @@
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "DATA.GOV.HK"],
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "ios", "Firebase"],
     "images": [
       "./images/sh/eco/1.webp",
       "./images/sh/eco/2.webp",
       "./images/sh/eco/3.webp"
-    ]
+    ],
+    "url": "https://play.google.com/store/apps/details?id=me.mike.recycle",
+    "detail": "Clean, Simple Hong Kong Recycle Map Helper<br/> It keep track open sourced Hong Kong government recycle point data and let you find and save them a few tap",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Utils",
+      "startAt": "Sep 2014",
+      "funniness": 3
+    }
   },
   {
+    "url": "https://www.facebook.com/deadstock.asia/about/?ref=page_internal",
     "name": "DeadStock",
     "img": "./images/ds.png",
     "desc": "AUTHENTIC SNEAKERS ONLINE TRADING PLATFORM",
@@ -22,72 +32,172 @@
       "React",
       "React Native",
       "Android",
-      "iOS",
+      "ios",
       "HTML5",
       "CSS3",
-      "k8s"
+      "Kubernetes",
+      "Jest",
+      "sass",
+      "typescript",
+      "webpack",
+      "bootstrap",
+      "redux"
     ],
-    "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"]
+    "images": ["./images/sh/ds/1.png", "./images/sh/ds/2.png"],
+    "detail": "An information centre and exchange placed for Hong Kong sneaker",
+    "meta": {
+      "language": "EN",
+      "platform": "Web, Mobile",
+      "catagories": "Fashion",
+      "startAt": "Sep 2019",
+      "funniness": 3
+    }
   },
   {
+    "url": "https://www.hoop.cam/",
     "name": "HoopCam",
     "img": "./images/hoopcam.png",
     "desc": "TURN YOUR BASKETBALL PASSION INTO A CAREER",
-    "tags": ["React Native", "Android", "iOS", "AppCenter", "CircleCI"],
+    "tags": [
+      "React Native",
+      "Android",
+      "ios",
+      "AppCenter",
+      "CircleCI",
+      "Firebase",
+      "pug"
+    ],
     "images": [
       "./images/sh/hc/1.webp",
       "./images/sh/hc/2.webp",
       "./images/sh/hc/3.webp"
-    ]
+    ],
+    "detail": "HoopCam makes basketball an eSport so passionate players like you can earn as you play and contribute to the growth of basketball worldwide",
+    "meta": {
+      "language": "EN",
+      "platform": "Web, Mobile",
+      "catagories": "Sport",
+      "startAt": "Sep 2019",
+      "funniness": 4
+    }
   },
   {
+    "url": "https://www.facebook.com/getfilmate/",
     "name": "Filmate",
     "img": "./images/Filmate_logo.png",
     "desc": "以戲會友，一拍即合",
-    "tags": ["MeteorJS", "Cordova", "Android", "iOS"],
+    "tags": [
+      "MeteorJS",
+      "Cordova",
+      "Android",
+      "ios",
+      "Mongodb",
+      "AWS",
+      "HTML5",
+      "CSS3"
+    ],
     "images": [
       "./images/sh/fm/1.png",
       "./images/sh/fm/2.png",
       "./images/sh/fm/3.png"
-    ]
+    ],
+    "detail": "An elegant application to help you find your file-mate",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Social",
+      "startAt": "Sep 2019",
+      "funniness": 5
+    }
   },
   {
+    "url": "https://lynk.global/",
     "name": "Lynk",
-    "img": "https://lynk.global/assets/_images/logo-dark.svg",
+    "img": "./images/lynk.svg",
     "desc": "CONNECTING THE WORLD'S GREATEST MINDS",
     "tags": [
-      "Golang",
+      "go",
       "AWS",
       "Jenkins",
       "Ansible",
-      "NodeJs",
       "Python",
-      "TensorFlow",
+      "Tensorflow",
       "Nodejs",
       "Android",
-      "iOS",
+      "ios",
       "Docker",
       "Chrome extension",
       "Angular",
-      "Vue"
-    ]
+      "vue-js",
+      "Karma",
+      "Jest",
+      "Mocha",
+      "Mongodb",
+      "nginx",
+      "pug",
+      "sass",
+      "webpack",
+      "selenium",
+      "puppeteer",
+      "sketch",
+      "babeljs",
+      "redux"
+    ],
+    "images": [],
+    "detail": " • Development of web management platform for enterprise clients.<br/> • Internal system development to enhance team performance.<br/> • Web communication platform development<br/> • Run agile development team.<br/> • Gather requirement with the project owner<br/> • Invoke with system solution design<br/> • Mobile development with React Native, Native language<br/> ",
+    "meta": {
+      "language": "EN",
+      "platform": "Web, Mobile",
+      "catagories": "Business",
+      "startAt": "Jun 2014",
+      "funniness": 3
+    }
   },
   {
+    "url": false,
     "name": "Fina",
     "img": "./images/fina.svg",
     "desc": "A SMART GIRL WHO HELP YOUR FINANCE",
-    "tags": ["React Native", "Nodejs", "Expo", "Android", "iOS", "Hackathon"]
+    "tags": ["React Native", "Nodejs", "Expo", "Android", "ios", "Hackathon"],
+    "images": [],
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Finance",
+      "startAt": "May 2020",
+      "funniness": 5
+    }
   },
   {
+    "url": "https://devpost.com/404_Not_Found/challenges",
     "name": "Hot Spot",
     "img": "./images/hot-spot.png",
     "desc": "Optimize with Sixth Sense",
-    "tags": ["Flir", "Hackathon", "Android", "Big-data"]
+    "tags": ["React Native"],
+    "images": [],
+    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Utils",
+      "startAt": "May 2016",
+      "funniness": 5
+    }
   },
   {
+    "url": "https://devpost.com/404_Not_Found/challenges",
     "name": "Booster",
     "img": "./images/booster.png",
     "desc": "Work Out with the Sixth Sense",
-    "tags": ["Flir", "Hackathon", "Android", "Sport"]
+    "tags": ["React Native"],
+    "images": [],
+    "detail": "BRING THE HEAT! Hacking and Making with thermal imaging. <br/><br/> FLIR's revolutionary FLIR ONE (http://flir.com/flirone) and Lepton (http://www.flir.com/cores/content/?id=66257) products bring thermal imaging to the mass consumer market for the very first time, and we're challenging hackers and makers around the globe to compete for prizes by creating the most innovative, beautiful, and useful software or hardware solutions using FLIR's thermal imaging products imaginable!  If you were a superhero with a thermal imaging sixth sense, what would YOUR super power be?",
+    "meta": {
+      "language": "EN",
+      "platform": "Mobile",
+      "catagories": "Utils",
+      "startAt": "May 2016",
+      "funniness": 5
+    }
   }
 ]

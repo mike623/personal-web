@@ -30,8 +30,8 @@ $(".card").click(function() {
   }
 });
 
-$(".close").click(function(e) {
-    e.stopPropagation();
+function closeAllCards(){
+  if(!Card) return;
   $('.card.is-open').removeClass('is-open')
   setTimeout(function(){
     Card.css({
@@ -41,5 +41,29 @@ $(".close").click(function(e) {
       top: 'auto',
     }).parents('.card-holder').removeAttr('style')
     $("html").removeClass('hidden')
+    Card = undefined;
   }, 500);
+}
+
+$(".close").click(function(e) {
+    e.stopPropagation();
+    closeAllCards();
 })
+
+var specifiedElements = document.querySelectorAll(".card");
+
+//I'm using "click" but it works with any event
+document.addEventListener("click", function (event) {
+  var isClickInside = false;
+  var reduced = [];
+  specifiedElements.forEach(
+    (specifiedElement) =>
+      reduced.push(specifiedElement.contains(event.target))
+  );
+  isClickInside = reduced.some(Boolean)
+
+  if (!isClickInside) {
+    closeAllCards();
+    //the click was outside the specifiedElement, do something
+  }
+});

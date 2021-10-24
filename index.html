@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" :class="dark ? 'dark': ''" x-data="darkMode">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MIKE WONG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Mike - You enjoy work with" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://namike.me" />
+    <meta property="og:image" content="./images/me.jpg" />
+    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script>
+      window.kebabCase = (string) =>
+        string
+          .replace(/([a-z])([A-Z])/g, "$1-$2")
+          .replace(/\s+/g, "-")
+          .toLowerCase();
+    </script>
+    <script>
+      document.addEventListener("alpine:init", () => {
+        Alpine.data("darkMode", () => {
+          let dark = true;
+          if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
+            dark = true;
+          } else {
+            dark = false;
+          }
+          return {
+            dark,
+            toggle() {
+              this.dark = !this.dark;
+              localStorage.theme = this.dark ? "dark" : "light";
+            },
+          };
+        });
+      });
+    </script>
+  </head>
+
+  <body class="dark:bg-gray-800 dark:text-gray-400">
+    <div class="swiper-container h-screen pointer-events-none">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide bg-gray-400 bg-cover bg-center"
+            style="
+              height: 100vh;
+              background-image: url(https://lh3.googleusercontent.com/WLn4oFIZJPNgL88NugUqQw0N7j_ro5VRu95qRQ4qdmqaQ8e-TSAPmcFXMnqR8goFCITPnRmeAwe_yhHB7ljS7J7Wrnc75i0qcogVeaN9hHvFFlkG_ekGN8aUMyyBpuOqLvZrgeTE2EM=w1920-h1080);
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute right-0 top-0 z-10 mx-10 my-5 text-2xl">
+      <span role="button" @click="toggle" x-show="dark">
+        <i class="fas fa-sun"></i>
+      </span>
+      <span role="button" @click="toggle" x-show="!dark">
+        <i class="fas fa-moon"></i>
+      </span>
+    </div>
+
+    <div class="flex justify-center flex-col items-center h-screen relative">
+      <div
+        data-aos="fade-down"
+        data-aos-offset="-100"
+        data-aos-delay="300"
+        style="position: absolute; bottom: 0"
+        class="text-center w-full absolute"
+      >
+        <a style="margin-bottom: 10px" href="#portfolio">
+          <strong>MY WORKS</strong>
+        </a>
+        <div><i class="fas fa-chevron-down"></i></div>
+      </div>
+
+      <img src="./images/me.png" alt="me" />
+      <div class="mb-10 text-2xl mt-5 flex">
+        <a
+          class="mx-2"
+          target="_blank"
+          href="https://www.linkedin.com/in/mike-wong-namike/"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="mx-2" target="_blank" href="https://github.com/mike623">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div data-aos="fade-down">
+        <h1 data-wrap="h1" class="text-2xl md:text-4xl">
+          HI, I am Mike, a
+          <div class="typing-warp"><span class="typing"></span></div>
+        </h1>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio" class="my-10 text-center" x-data="{ open: 'Lynk' }">
+      <div
+        class="
+          text-center
+          italic
+          text-2xl
+          md:w-1/2
+          text-gray-600
+          mx-10
+          md:m-auto
+        "
+      >
+        “Software and cathedrals are much the same — first we build them, then
+        we pray.”
+      </div>
+      <div class="flex md:flex-wrap w-4/5 m-auto my-10 overflow-x-auto">
+        <% showcase.forEach(function(c){ %>
+        <div
+          role="button"
+          x-bind:class="open === '<%= c.name %>' ? 'scale-125 ' : ''"
+          @click="open = '<%= c.name %>'"
+          class="
+            md:w-1/6
+            mt-8
+            mx-5
+            md:mx-0
+            transform
+            hover:scale-105
+            md:hover:scale-125
+            transition-all
+          "
+        >
+          <div
+            class="
+              mx-auto
+              w-20
+              h-20
+              flex
+              justify-center
+              items-center
+              rounded-xl
+              border
+              p-5
+              dark:bg-gray-600
+            "
+          >
+            <img src="<%= c.img %>" alt="" />
+          </div>
+          <div class="text-center mt-3"><%= c.name %></div>
+        </div>
+        <% }); %>
+      </div>
+
+      <div
+        class="
+          mx-10
+          md:w-3/4
+          mt-30
+          md:mx-auto
+          rounded-lg
+          border
+          px-10
+          py-1
+          dark:bg-gray-700
+        "
+        style="min-height: 500px"
+      >
+        <% showcase.forEach(function(c){ %>
+        <div
+          class="wrapper my-10"
+          x-transition
+          x-show="open === '<%= c.name %>'"
+        >
+          <div class="flex mb-10 flex-col md:items-center md:flex-row">
+            <div class="mr-10 mb-5 md:mb-0">
+              <div
+                class="
+                  w-20
+                  h-20
+                  rounded-xl
+                  overflow-hidden
+                  bg-contain bg-no-repeat bg-center
+                "
+                style="background-image: url(<%= c.img %>)"
+              ></div>
+            </div>
+            <div class="text-left">
+              <div class="font-bold"><%= c.name %></div>
+              <div class="text-xs text-gray-400"><%= c.desc %></div>
+              <div class="mt-4">
+                <a
+                  role="button"
+                  target="_blank"
+                  x-show="'<%= c.url %>' !== 'false'"
+                  href="<%= c.url %>"
+                >
+                  <span
+                    class="px-4 rounded-2xl py-1 bg-blue-500 text-white text-sm"
+                  >
+                    GET
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- meta -->
+          <div
+            class="
+              mt-5
+              flex
+              justify-between
+              text-gray-700
+              items-center
+              dark:text-gray-300
+            "
+          >
+            <div class="flex-1">
+              <div class="text-xs opacity-70">Platform</div>
+              <div class="font-bold"><%= c.meta.platform %></div>
+              <div class="text-xs">platform</div>
+            </div>
+
+            <div
+              class="hidden md:block h-7 bg-gray-300"
+              style="width: 1px"
+            ></div>
+            <div class="flex-1 hidden md:block">
+              <div class="text-xs opacity-70">LANGUAGE</div>
+              <div class="font-bold"><%= c.meta.language %></div>
+              <div class="text-xs">language</div>
+            </div>
+            <div class="h-7 bg-gray-300" style="width: 1px"></div>
+            <div class="flex-1">
+              <div class="text-xs opacity-70">Catagories</div>
+              <div class="font-bold"><%= c.meta.catagories %></div>
+              <div class="text-xs">catagories</div>
+            </div>
+            <div
+              class="hidden md:block h-7 bg-gray-300"
+              style="width: 1px"
+            ></div>
+            <div class="flex-1 hidden md:block">
+              <div class="text-xs opacity-70">Start At</div>
+              <div class="font-bold"><%= c.meta.startAt %></div>
+              <div class="text-xs">Start At</div>
+            </div>
+            <div class="h-7 bg-gray-300" style="width: 1px"></div>
+            <div class="flex-1">
+              <div class="text-xs opacity-70">Funniness</div>
+              <div class="font-bold"><%= c.meta.funniness %></div>
+              <div class="text-xs">over 5</div>
+            </div>
+          </div>
+
+          <div class="w-full flex overflow-x-scroll mt-10">
+            <% c.images.forEach(function(img){ %>
+            <img class="w-32 mr-5" src="<%= img %>" alt="" />
+            <% }); %>
+          </div>
+
+          <div id="detail" class="mt-10 text-sm text-left text-gray-500">
+            <%- c.detail %>
+          </div>
+
+          <!-- tech stack -->
+          <div class="text-left mt-10">
+            <div class="mb-3 text-xs text-gray-400">used with:</div>
+            <div class="flex flex-wrap">
+              <% c.tags.forEach(function(tag){ %>
+              <div
+                :style="`--background: url(./images/stack-icons/${kebabCase('<%= tag %>')}.svg.png)`"
+                alt="<%= tag %>"
+                class="data-image mr-3 tooltip top mb-2"
+              ></div>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+    <hr />
+  </body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
