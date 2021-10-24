@@ -21,5 +21,8 @@
     "publish": "netlify deploy",
     "build": "vite build",
     "serve": "vite preview"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
