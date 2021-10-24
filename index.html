@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" :class="dark ? 'dark': ''" x-data="{dark: true}">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,7 +36,7 @@
 </html>
 
 <body class="dark:bg-gray-800 dark:text-gray-400">
-  <div class="swiper-container h-screen">
+  <div class="swiper-container h-screen pointer-events-none">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div
@@ -48,6 +48,15 @@
         ></div>
       </div>
     </div>
+  </div>
+
+  <div class="absolute right-0 top-0 z-10 mx-10 my-5 text-2xl">
+    <span role="button" @click="dark = false" x-show="dark">
+      <i class="fas fa-sun"></i>
+    </span>
+    <span role="button" @click="dark = true" x-show="!dark">
+      <i class="fas fa-moon"></i>
+    </span>
   </div>
 
   <div class="flex justify-center flex-col items-center h-screen relative">
