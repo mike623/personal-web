@@ -1,5 +1,23 @@
 [
   {
+    "name": "Brownie",
+    "img": "./images/brownie.png",
+    "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
+    "tags": ["Svelte", "Tailwind", "HTML5", "CSS3", "Typescript"],
+    "images": [
+      "./images/sh/brownie/1.jpg"
+    ],
+    "url": "https://brownie.namike.me/",
+    "detail": "Another simple movie search application made by Svelte, Tailwind",
+    "meta": {
+      "language": "EN",
+      "platform": "Web",
+      "catagories": "Utils",
+      "startAt": "Sep 2019",
+      "funniness": 3
+    }
+  },
+  {
     "name": "ECO-CYCLE",
     "img": "./images/eco-cycle.webp",
     "desc": "SIMPLE, ELEGANT, RECYCLE PLACES HELPER",
